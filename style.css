@@ -380,10 +380,10 @@ section h2 {
 
 /* Skills Section */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
-    justify-items: center;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -395,8 +395,7 @@ section h2 {
     background: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 120px;
+    width: 120px;
 }
 
 .skill-item:hover {
@@ -1016,11 +1015,6 @@ footer p {
         justify-content: center;
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-        gap: 10px;
-    }
-
     .services-grid,
     .projects-grid,
     .blog-grid {
@@ -1262,10 +1256,25 @@ footer p {
     gap: 30px;
 }
 
+.skill-category {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
 .skill-category h4 {
     font-size: 1.1rem;
     margin-bottom: 15px;
     color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-category h4 i {
+    color: #4A90E2;
+    font-size: 1.2rem;
 }
 
 .skill-category ul {

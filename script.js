@@ -50,7 +50,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.skill-item, .service-card, .project-card, .blog-card, .about-text, .contact-info, .contact-form').forEach(el => {
+document.querySelectorAll('.skill-item, .service-card, .project-card, .blog-card, .about-text, .contact-info, .contact-form, .cv-section').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
