@@ -1,420 +1,183 @@
+<!-- File: index.html -->
+<!-- Tema: Website Portfolio -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Latif - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Membuat judul website -->
+    <title>Tech Journey - Ahmad Latif</title>
+
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header -->
+
+    <!-- Membuat bagian header -->
     <header>
-        <nav>
-            <div class="nav-container">
-                <div class="logo">
-                    <h1>Ahmad Latif</h1>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+
+        <div class="container">
+
+            <h1>Tech Journey - Ahmad Latif</h1>
+
+            <!-- Membuat menu navigasi -->
+            <nav>
+                <ul>
+                    <li><a href="#tentang">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#kontak">Contact</a></li>
+
+                    <!-- Link profil Dicoding -->
+                    <li>
+                        <a href="https://www.dicoding.com/users/zergavos/"
+                            target="_blank">
+                            Dicoding Profile
+                        </a>
+                    </li>
+                
+                    <!-- Link profil Dicoding -->
+                    <li>
+                        <a href="https://www.skills.google/public_profiles/198cea37-30ff-4f62-85e6-f12f600f3cbc"
+                           target="_blank">
+                           Skillbuild Profile
+                        </a>
+                    </li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+            </nav>
+
+        </div>
+
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Hello, I'm Ahmad Latif</h2>
-            <h3>Full Stack Developer & UI/UX Designer</h3>
-            <p>I create beautiful and functional websites that bring ideas to life.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="#contact" class="btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="./img/profile.jpg" alt="Ahmad Latif">
-        </div>
-    </section>
+    <!-- Membuat bagian main -->
+    <main class="container">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer with expertise in creating modern, responsive websites. With years of experience in front-end and back-end development, I specialize in turning complex problems into simple, beautiful designs.</p>
-                    <p>My goal is to deliver high-quality solutions that not only meet client requirements but exceed expectations. I believe in continuous learning and staying up-to-date with the latest technologies.</p>
-                    <div class="about-buttons">
-                        <a href="./cv.pdf" class="btn-primary" target="_blank">Download My CV</a>
-                        <a href="./pages/about.html" class="btn-primary">Learn More About Me</a>
-                    </div>
-                    <div class="stats">
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>30+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-carousel">
-                    <div class="carousel-container">
-                        <button class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-                        <button class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</button>
-                        
-                        <div class="carousel-slide active">
-                            <img src="./img/Data_Analytic.jpg" alt="React Certification">
-                            <div class="certification-info">
-                                <h4>React Developer Certification</h4>
-                                <p>Meta (Facebook)</p>
-                                <span class="cert-date">2024</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="./img/Data_Analytic.jpg" alt="JavaScript Certification">
-                            <div class="certification-info">
-                                <h4>JavaScript Developer</h4>
-                                <p>Mozilla Developer Network</p>
-                                <span class="cert-date">2023</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="./img/Data_Analytic.jpg" alt="UI/UX Certification">
-                            <div class="certification-info">
-                                <h4>UI/UX Design Professional</h4>
-                                <p>Google UX Design</p>
-                                <span class="cert-date">2024</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="./img/Data_Analytic.jpg" alt="Node.js Certification">
-                            <div class="certification-info">
-                                <h4>Node.js Developer</h4>
-                                <p>Linux Academy</p>
-                                <span class="cert-date">2023</span>
-                            </div>
-                        </div>
-                        
-                        <div class="carousel-indicators">
-                            <span class="indicator active" onclick="goToSlide(0)"></span>
-                            <span class="indicator" onclick="goToSlide(1)"></span>
-                            <span class="indicator" onclick="goToSlide(2)"></span>
-                            <span class="indicator" onclick="goToSlide(3)"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Membuat konten utama -->
+        <div id="content">
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js-square"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-react"></i>
-                    <span>React</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-php"></i>
-                    <span>PHP</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-laravel"></i>
-                    <span>Laravel</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-figma"></i>
-                    <span>Figma</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-palette"></i>
-                    <span>Adobe XD</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-bootstrap"></i>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-sass"></i>
-                    <span>Sass</span>
-                </div>
-            </div>
-            <div class="view-all-container">
-                <a href="./pages/myskill.html" class="btn-primary">View All Skills</a>
-            </div>
-        </div>
-    </section>
+            <!-- Article pertama -->
+            <article id="tentang">
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>I create responsive, fast, and user-friendly websites using modern technologies like React, Node.js, and Laravel.</p>
-                    <ul class="service-features">
-                        <li>Custom Web Applications</li>
-                        <li>E-commerce Solutions</li>
-                        <li>API Development</li>
-                        <li>Database Design</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>I design intuitive and beautiful user interfaces that provide exceptional user experiences across all devices.</p>
-                    <ul class="service-features">
-                        <li>User Research & Analysis</li>
-                        <li>Wireframing & Prototyping</li>
-                        <li>Visual Design</li>
-                        <li>Usability Testing</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <p>I ensure your website looks and works perfectly on all devices - desktop, tablet, and mobile.</p>
-                    <ul class="service-features">
-                        <li>Mobile-First Approach</li>
-                        <li>Cross-Browser Compatibility</li>
-                        <li>Performance Optimization</li>
-                        <li>SEO-Friendly Design</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Performance Optimization</h3>
-                    <p>I optimize websites for speed, performance, and search engine rankings to improve user experience and conversions.</p>
-                    <ul class="service-features">
-                        <li>Loading Speed Optimization</li>
-                        <li>Code Minification</li>
-                        <li>Image Optimization</li>
-                        <li>SEO Implementation</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Maintenance & Support</h3>
-                    <p>I provide ongoing maintenance, updates, and technical support to keep your website running smoothly.</p>
-                    <ul class="service-features">
-                        <li>Bug Fixes & Updates</li>
-                        <li>Security Monitoring</li>
-                        <li>Content Management</li>
-                        <li>Technical Support</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Consulting</h3>
-                    <p>I offer expert advice on technology choices, architecture decisions, and best practices for your projects.</p>
-                    <ul class="service-features">
-                        <li>Technology Stack Selection</li>
-                        <li>Architecture Planning</li>
-                        <li>Code Review</li>
-                        <li>Best Practices Guidance</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="services-cta">
-                <a href="./pages/packages.html" class="btn-primary">View Package Offers</a>
-            </div>
-        </div>
-    </section>
+                <h2>About Me</h2>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="./img/Data_Analytic.jpg" alt="E-commerce Website">
-                    <div class="project-info">
-                        <h3>E-commerce Website</h3>
-                        <p>A full-stack e-commerce platform with modern UI/UX design, secure payment integration, and admin dashboard.</p>
-                        <div class="tools-used">
-                            <span>Tools:</span>
-                            <i class="fab fa-react"></i>
-                            <i class="fab fa-node-js"></i>
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-small">Live Demo</a>
-                            <a href="#" class="btn-small">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="./img/Data_Analytic.jpg" alt="Portfolio Website">
-                    <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>A responsive portfolio website showcasing creative work with smooth animations and modern design principles.</p>
-                        <div class="tools-used">
-                            <span>Tools:</span>
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-small">Live Demo</a>
-                            <a href="#" class="btn-small">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="view-all-container">
-                <a href="./pages/projects.html" class="btn-primary">View All Projects</a>
-            </div>
-        </div>
-    </section>
+                <p>
+                    I am Ahmad Latif, an Industrial Engineering student with an interest in data analytics, business intelligence, supply chain, and artificial intelligence. I have experience in data analysis, digital marketing analytics, and developing data-based strategies to improve business performance and efficiency.
+                    <br><br>
+                    I actively develop technology skills through various competency development programs such as <a href="#">SkillBuild</a> and <a href="#">Dicoding</a>, with a focus on AI Engineering, MLOps, machine learning, and data-driven decision making. I am also used to using tools such as Python, SQL, Tableau, Power BI, and Microsoft Excel to process data into impactful insights.
+                    <br><br>
+                    As an analytical, adaptive and growth mindset individual, I believe that technology and data can be the main foundation in creating innovation and sustainable business solutions.
+                </p>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2>My Blog</h2>
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <img src="./img/Data_Analytic.jpg" alt="Blog Post 1">
-                    <div class="blog-info">
-                        <div class="blog-meta">
-                            <span class="date">December 10, 2025</span>
-                            <span class="category">Web Development</span>
-                        </div>
-                        <h3>Building Modern Web Applications with React</h3>
-                        <p>Learn how to create responsive and interactive web applications using React, the popular JavaScript library for building user interfaces.</p>
-                        <a href="#" class="btn-small">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-card">
-                    <img src="./img/Data_Analytic.jpg" alt="Blog Post 2">
-                    <div class="blog-info">
-                        <div class="blog-meta">
-                            <span class="date">November 28, 2025</span>
-                            <span class="category">UI/UX Design</span>
-                        </div>
-                        <h3>Essential UI/UX Principles for Web Designers</h3>
-                        <p>Discover the fundamental principles of user interface and user experience design that every web designer should know.</p>
-                        <a href="#" class="btn-small">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="view-all-container">
-                <a href="./pages/blog.html" class="btn-primary">View All Blogs</a>
-            </div>
-        </div>
-    </section>
+            </article>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>ahmad.latif@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>New York, NY</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://wa.me/1234567890" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://t.me/username" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
-                        <a href="https://instagram.com/username" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://facebook.com/username" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://linkedin.com/in/username" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/username" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/username" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+            <!-- Article kedua -->
+            <article id="project">
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Ahmad Latif. All rights reserved.</p>
+                <h2>Technology Projects</h2>
+
+                <p>
+                    Beberapa project yang saya kerjakan meliputi:
+                </p>
+
+                <ul>
+                    <li>Monitoring Machine Learning dengan Prometheus & Grafana</li>
+                    <li>Sentiment Analysis menggunakan NLP</li>
+                    <li>Dashboard visualisasi data interaktif</li>
+                    <li>Website portfolio responsive</li>
+                </ul>
+
+            </article>
+
         </div>
+
+        <!-- Membuat sidebar -->
+        <aside>
+
+            <!-- Foto pada aside -->
+            <img
+                src="img/profile.jpg"
+                alt="Foto Profil">
+
+            <h3>Ahmad Latif</h3>
+
+            <p>
+                Mahasiswa Teknik Industri yang fokus pada Data Science,
+                Machine Learning, dan Web Development.
+            </p>
+
+            <br>
+
+            <p>
+                📍 Indonesia
+            </p>
+
+            <p>
+                📧 ahmadlatifar10@gmail.com
+            </p>
+
+            <div class="social-icons">
+                <a href="https://wa.me/6283152516337" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ahmad-latif-aulia-rahman-032a77292" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://zergavos.github.io/PORTOFOLIO" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://x.com/AhmadLatifar" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="https://instagram.com/ahmad.latif10" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.quora.com/profile/Username" target="_blank">
+                    <i class="fab fa-quora"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@username" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="https://discordapp.com/users/ahmadlatifar" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+
+                <a href="https://t.me/username" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+
+                <a href="https://cal.com/ZERGAVOS" target="_blank">
+                    <i class="fas fa-calendar"></i>
+                </a>
+
+                <a href="https://medium.com/@username" target="_blank">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- Membuat footer -->
+    <footer id="kontak">
+
+        <p>
+            &copy; 2026 Ahmad Latif | Portfolio Website
+        </p>
+
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
 </body>
 </html>
